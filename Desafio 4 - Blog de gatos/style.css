@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.app {
+  height: 100vh;
+  width: 43rem;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+nav {
+  display: flex;
+
+  align-items: center;
+  gap: 2.4rem;
+
+  padding: 1.6rem 2.8rem;
+
+  background-color: #065e7c;
+}
+
+nav img {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+}
+
+.input-wrapper input {
+  width: 24rem;
+  height: 4rem;
+
+  border: none;
+  border-radius: 0.8rem;
+
+  padding: 1.6rem 1.6rem;
+  color: white;
+
+  background-color: #2180a0;
+}
+
+.input-wrapper input::placeholder {
+  color: white;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+
+  position: absolute;
+
+  overflow: hidden;
+}
+
+main {
+  overflow-y: scroll;
+}
+
+.conteiner > img {
+  width: 43rem;
+  height: 22rem;
+
+  object-fit: cover;
+}
+
+.content {
+  margin: 3.2rem 2.4rem;
+}
+
+h1,
+h2 {
+  font-size: 2.4rem;
+}
+
+.conteiner button {
+  border: none;
+  margin-top: 0.8rem;
+  margin-right: 1.2rem;
+
+  &:hover {
+    filter: contrast(120%);
+  }
+}
+
+.select {
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.6rem;
+
+  margin-top: 3.2rem;
+
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.item h3 {
+  font-size: 1.8rem;
+
+  margin-bottom: 1.2rem;
+}
+
+footer {
+  text-align: center;
+
+  padding: 2.4rem 1.6rem;
+  background-color: #065e7c;
+
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .app {
+    width: 100vw;
+  }
+
+  nav {
+    padding: 1.6rem;
+    justify-content: center;
+  }
+
+  .input-wrapper input {
+    width: 108rem;
+  }
+
+  main {
+    display: flex;
+
+    gap: 3.2rem;
+
+    margin: 0 auto;
+  }
+
+  .content p {
+    width: 80rem;
+  }
+
+  .conteiner > img {
+    width: 80rem;
+    height: 35rem;
+
+    margin: 3.2rem 0 0 2.5rem;
+
+    border-radius: 0.4rem;
+  }
+
+  .item p {
+    width: 21rem;
+  }
+
+  .select {
+    display: flex;
+    align-items: center;
+  }
+
+  .select h1 {
+    margin-right: 34rem;
+  }
+}
